@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Mini Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Smart City Dashboard</h1>
+    <p class="subtitle">Urban Indicators at a Glance</p>
+
+    <div class="dashboard">
+        <div class="card">
+            <div class="icon">🌫️</div>
+            <h3>Air Quality</h3>
+            <p class="value" id="airQuality">--</p>
+            <span class="label">AQI Index</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">🌳</div>
+            <h3>Green Space</h3>
+            <p class="value" id="greenSpace">--</p>
+            <span class="label">% Coverage</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">👥</div>
+            <h3>Population Growth</h3>
+            <p class="value" id="populationGrowth">--</p>
+            <span class="label">% Annual</span>
+        </div>
+
+        <div class="card">
+            <div class="icon">🚦</div>
+            <h3>Traffic Level</h3>
+            <p class="value" id="trafficLevel">--</p>
+            <span class="label">Congestion</span>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
