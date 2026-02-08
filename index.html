@@ -3,22 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart City Mini Dashboard</title>
+    <title>Smart City Dashboard - Ghana</title>
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 </head>
 <body>
 
 <div class="container">
     <h1>Smart City Dashboard</h1>
-    <p class="subtitle">Urban Indicators at a Glance</p>
+    <p class="subtitle">
+        Urban Indicators at a Glance<br>
+        <small>(Mock data for demonstration purposes)</small>
+    </p>
 
     <!-- City Selector -->
     <select id="citySelect">
         <option value="accra">Accra</option>
         <option value="kumasi">Kumasi</option>
-        <option value="stuttgart">Stuttgart</option>
+        <option value="tamale">Tamale</option>
+        <option value="takoradi">Takoradi</option>
+        <option value="cape-coast">Cape Coast</option>
+        <option value="ho">Ho</option>
+        <option value="bolgatanga">Bolgatanga</option>
+        <option value="koforidua">Koforidua</option>
     </select>
 
+    <!-- Map -->
+    <div id="ghanaMap" style="height: 400px; margin-bottom: 30px;"></div>
+
+    <!-- Dashboard Cards -->
     <div class="dashboard">
         <div class="card">
             <div class="icon">🌫️</div>
@@ -50,10 +68,7 @@
     </div>
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
 </body>
 </html>
-<p class="subtitle">
-    Urban Indicators at a Glance<br>
-    <small>(Mock data for demonstration purposes)</small>
-</p>
