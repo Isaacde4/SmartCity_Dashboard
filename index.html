@@ -12,32 +12,39 @@
     <h1>Smart City Dashboard</h1>
     <p class="subtitle">Urban Indicators at a Glance</p>
 
+    <!-- City Selector -->
+    <select id="citySelect">
+        <option value="accra">Accra</option>
+        <option value="kumasi">Kumasi</option>
+        <option value="stuttgart">Stuttgart</option>
+    </select>
+
     <div class="dashboard">
         <div class="card">
             <div class="icon">🌫️</div>
             <h3>Air Quality</h3>
-            <p class="value" id="airQuality">--</p>
+            <p class="value" id="airQuality">0</p>
             <span class="label">AQI Index</span>
         </div>
 
         <div class="card">
             <div class="icon">🌳</div>
             <h3>Green Space</h3>
-            <p class="value" id="greenSpace">--</p>
+            <p class="value" id="greenSpace">0%</p>
             <span class="label">% Coverage</span>
         </div>
 
         <div class="card">
             <div class="icon">👥</div>
             <h3>Population Growth</h3>
-            <p class="value" id="populationGrowth">--</p>
+            <p class="value" id="populationGrowth">0%</p>
             <span class="label">% Annual</span>
         </div>
 
         <div class="card">
             <div class="icon">🚦</div>
             <h3>Traffic Level</h3>
-            <p class="value" id="trafficLevel">--</p>
+            <p class="value" id="trafficLevel">—</p>
             <span class="label">Congestion</span>
         </div>
     </div>

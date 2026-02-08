@@ -23,7 +23,16 @@ body {
 
 .subtitle {
     opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+/* City selector */
+select {
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
     margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .dashboard {
@@ -54,6 +63,11 @@ body {
     font-weight: bold;
     margin: 10px 0;
 }
+
+/* Status colors */
+.good { color: #4ade80; }     /* green */
+.medium { color: #facc15; }   /* yellow */
+.bad { color: #f87171; }      /* red */
 
 .label {
     font-size: 14px;
